@@ -3,6 +3,19 @@ target = target.replace('#', '');
 window.location.hash = "";
 
 
+if ( /webkit.*mobile/i.test(navigator.userAgent)) {
+    (function($) {
+        $.fn.offsetOld = $.fn.offset;
+        $.fn.offset = function() {
+          var result = this.offsetOld();
+          result.top -= window.scrollY;
+          result.left -= window.scrollX;
+          return result;
+        };
+    })(jQuery);
+  }
+
+
 
 $(document).ready(function(){
     
@@ -16,7 +29,7 @@ $(document).ready(function(){
                 offset = 50;
             }
 
-            offset -=  $("div.menu-container").offset().top;
+            //offset -=  $("div.menu-container").offset().top;
 
             $('html, body').stop(true);
             $('html, body').animate({
