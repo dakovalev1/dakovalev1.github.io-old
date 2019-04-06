@@ -41,7 +41,7 @@ $(document).ready(function(){
             } else {
                 offset = 50;
             }
-            offset = 0;
+            offset = 50;
 
             //offset -=  $("div.menu-container").offset().top;
 
