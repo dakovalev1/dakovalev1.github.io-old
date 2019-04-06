@@ -2,7 +2,7 @@ div.menu-container{
     position: fixed;
     width: 100%;
     top: 0;
-    display:none;
+    height: 50px;
 }
 
 ul.menu{
@@ -10,6 +10,7 @@ ul.menu{
     list-style-type: none;
     overflow: hidden;
     padding: 0;
+    display:none;
 }
 
 ul.menu a{
