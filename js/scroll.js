@@ -16,7 +16,7 @@ $(document).ready(function(){
                 offset = 50;
             }
 
-            offset +=  $("div.menu-container").offset().top;
+            offset -=  $("div.menu-container").offset().top;
 
             $('html, body').stop(true);
             $('html, body').animate({
