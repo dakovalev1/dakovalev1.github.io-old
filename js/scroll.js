@@ -3,22 +3,23 @@ target = target.replace('#', '');
 window.location.hash = "";
 
 
-if ( /webkit.*mobile/i.test(navigator.userAgent)) {
-    (function($) {
-        $.fn.offsetOld = $.fn.offset;
-        $.fn.offset = function() {
-          var result = this.offsetOld();
-          result.top -= window.scrollY;
-          result.left -= window.scrollX;
-          return result;
-        };
-    })(jQuery);
-  }
 
 
 
 $(document).ready(function(){
+    if ( /webkit.*mobile/i.test(navigator.userAgent)) {
+        (function($) {
+            $.fn.offsetOld = $.fn.offset;
+            $.fn.offset = function() {
+              var result = this.offsetOld();
+              result.top -= window.scrollY;
+              result.left -= window.scrollX;
+              return result;
+            };
+        })(jQuery);
+    }
     
+
     function scroll(elem){
         if (elem.length == 1){
             var offset = 0;
