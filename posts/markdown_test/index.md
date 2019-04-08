@@ -52,6 +52,9 @@ $$
 This is a test image:
 ![avatar](avatar.jpg){:width="30%"}
 
+Images have max-width css property, so no overflows are expected:
+![avatar](avatar.jpg){:height="50px" width="1000px"}
+
 ## Block Elements [](#){name=block}
 
 ### Paragraphs and Line Breaks [](#){name=p}
