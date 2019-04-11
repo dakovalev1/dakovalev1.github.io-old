@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 <link rel="stylesheet" href="https://www.dmitry-kovalev.com/css/menu.css">
 <link rel="stylesheet" href="https://www.dmitry-kovalev.com/css/common.css">
-<script src="https://www.dmitry-kovalev.com/js/menu.js"></script><script src="https://www.dmitry-kovalev.com/js/scroll.js"></script>
+<script src="https://www.dmitry-kovalev.com/js/menu.js"></script><script src="https://www.dmitry-kovalev.com/js/scroll.js"></script><script src="https://www.dmitry-kovalev.com/js/table.js"></script>
 </head>
 <body>
 <div class="menu-container"><ul class="menu">
@@ -36,6 +36,7 @@
 <li><a class="hashtag" href="#philosophy">Philosophy</a></li>
 </ul>
 </li>
+<li><a class="hashtag" href="#table">Tables</a></li>
 <li><a class="hashtag" href="#latex">Latex</a></li>
 <li><a class="hashtag" href="#image">Images</a></li>
 <li>
@@ -71,12 +72,88 @@ Markdown's syntax has been influenced by several existing text-to-HTML
 filters -- including <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>, <a href="http://www.aaronsw.com/2002/atx/">atx</a>, <a href="http://textism.com/tools/textile/">Textile</a>, <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>,
 <a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a>, and <a href="http://ettext.taint.org/doc/">EtText</a> -- the single biggest source of
 inspiration for Markdown's syntax is the format of plain text email.</p>
+<h2>Tables <a href="" name="table"></a>
+</h2>
+<p>Test tables:</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 1 is</td>
+<td align="center">left-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+<th>11111111111111</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+<td>11111111111111</td>
+</tr>
+</tbody>
+</table>
 <h2>Latex <a href="#" name="latex"></a>
 </h2>
-<p>Test some latex:
+<p>Here we test latex. 
+Inline formula: <script type="math/tex">e^x + \sqrt{\frac{f(x) - f(y)}{x-y}}</script>.</p>
+<p>Separate formula:
 <script type="math/tex; mode=display">
     \left\|x^{k+1} - x^* \right\|^2 \leq \left\|x^k - x^* \right\|^2 (1 - \eta \mu) - \left\|x^k - y^k\right\|^2(1 - 2\eta\mu - \eta^2 L^2)
 </script>
+</p>
+<p>
+<script type="math/tex">e^x + \sqrt{\frac{f(x) - f(y)}{x-y}}</script>
 </p>
 <h2>Images <a href="#" name="image"></a>
 </h2>
